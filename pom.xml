@@ -21,7 +21,11 @@
             <version>7.0</version>
             <scope>provided</scope>
         </dependency>
-        
+        <dependency>
+            <groupId>org.primefaces</groupId>
+            <artifactId>primefaces</artifactId>
+            <version>6.2</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -73,5 +77,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

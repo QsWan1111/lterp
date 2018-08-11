@@ -8,3 +8,11 @@ and open the template in the editor.
     Author     : 91074
 */
 
+body {
+    padding: 0;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.form-horizontal .btn:focus {
+    outline: none;
+}

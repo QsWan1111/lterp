@@ -1,0 +1,177 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2018-8-11, 14:33:00
+    Author     : 91074
+*/
+
+/*header style*/
+.index-header {
+    padding: 1em 190px 1em;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.index-header h1 {
+    color:#000;
+    font-weight: 600;
+    font-size: 2.5em;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.index-header h1 span {
+    display: block;
+    font-size: 60%;
+    font-weight: 400;
+    padding: 0.8em 0 0.5em 0;
+    color: #c3c8cd;
+}
+
+@media screen and (max-width: 1024px) {
+    .index-header {
+        padding: 2em 10% 2em;
+    }
+
+    .index-header h1 {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .index-header {
+        padding: 2em 10% 2em;
+    }
+
+    .index-header h1 {
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .index-header {
+        padding: 2em 10% 2em;
+    }
+
+    .index-header h1 {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .index-header {
+        padding: 2em 10% 2em;
+    }
+
+    .index-header h1 {
+        font-size: 1.2em;
+    }
+}
+
+.login-background {
+    background:#e0e0e0;
+    padding: 20px 0 40px 0;
+}
+
+.form-horizontal {
+    background: #fff;
+    padding-bottom: 40px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.form-horizontal .form-header {
+    display: block;
+    font-size: 35px;
+    font-weight: 700;
+    padding: 35px 0;
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 30px;
+}
+
+.form-horizontal .form-group {
+    padding: 0 40px;
+    margin: 0 0 25px 0;
+    position: relative;
+}
+
+.form-horizontal .form-control {
+    background: #f0f0f0;
+    border: none;
+    /*border-radius: 20px;*/
+    box-shadow: none;
+    padding: 0 20px 0 45px;
+    height: 40px;
+    transition: all 0.3s ease 0s;
+}
+
+/*焦点状态，告诉用户可输入或选择东西,通过伪类“:focus”以实现*/
+.form-horizontal .form-control:focus {
+    background: #e0e0e0;
+    box-shadow: none;
+    outline: 0 none;
+}
+
+.form-horizontal .form-group i {
+    position: absolute;
+    top: 12px;
+    left: 60px;
+    font-size: 17px;
+    color: #c8c8c8;
+    transition: all 0.5s ease 0s;
+}
+
+.form-horizontal .form-control:focus + i {
+    color: #00b4ef;
+}
+
+.textlabel {
+    width: 90px;
+    left: 0px;
+    top: 13px;
+    text-align: right;
+    font-size: 14px;
+}
+
+.form-horizontal .login-checkbox {
+    float: left;
+    position: relative;
+    margin: 5px 0 0 5px;
+    cursor: pointer;
+}
+
+.form-horizontal .text-right {
+    color: #848585;
+    float: right;
+    margin-left: 7px;
+    line-height: 20px;
+    padding-top: 5px;
+    text-transform: capitalize;
+}
+
+.form-horizontal .text-right:hover {
+    color: #000000;
+}
+
+.form-horizontal .btn {
+    font-size: 14px;
+    border-radius: 15px;
+    /*    color: #fff;
+        background:#fff;
+        border-radius: 30px;
+        padding: 10px 25px;
+        border: none;
+        text-transform: capitalize;
+        transition: all 0.5s ease 0s;*/
+}
+
+.btn-left {
+    float: left;
+}
+
+.btn-right {
+    float: right;
+}

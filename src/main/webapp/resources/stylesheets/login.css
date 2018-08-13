@@ -9,6 +9,7 @@ and open the template in the editor.
 */
 
 /*header style*/
+
 .index-header {
     padding: 1em 190px 1em;
     letter-spacing: -1px;
@@ -72,7 +73,7 @@ and open the template in the editor.
 }
 
 .login-background {
-    background:#e0e0e0;
+    
     padding: 20px 0 40px 0;
 }
 
@@ -154,18 +155,6 @@ and open the template in the editor.
 
 .form-horizontal .text-right:hover {
     color: #000000;
-}
-
-.form-horizontal .btn {
-    font-size: 14px;
-    border-radius: 15px;
-    /*    color: #fff;
-        background:#fff;
-        border-radius: 30px;
-        padding: 10px 25px;
-        border: none;
-        text-transform: capitalize;
-        transition: all 0.5s ease 0s;*/
 }
 
 .btn-left {

@@ -3,13 +3,71 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
-      xmlns:p="http://primefaces.org/ui">
-    <h:outputStylesheet library="stylesheets" name="bootstrap.css"/>
-    <h:head>
-        <title>Main page</title>
-    </h:head>
-    <h:body>
-        
-    </h:body>
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      >
+    <!--<h:outputStylesheet library="stylesheets" name="bootstrap.css"/>-->
+
+    <f:view contentType="text/html">
+        <h:head>
+            <f:facet name="first">
+                <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+                <title>海龙共享质检信息平台</title>
+            </f:facet>
+        </h:head>
+
+        <h:body>
+
+            <p:layout fullPage="true">
+
+                <p:layoutUnit position="north" size="100" resizable="true" closable="true" collapsible="true">
+                    <h2>#{title}</h2>
+                </p:layoutUnit>
+
+                <p:layoutUnit position="south" size="100" closable="true" collapsible="true">
+                    <h2 >  @CopyRight2010-2018  青岛海龙软件有限公司   软件开发人员：#{author}        <p:clock /> </h2>
+                </p:layoutUnit>
+
+
+
+                <p:layoutUnit position="west" size="180" header="Left" collapsible="true">
+
+                    <p:menu toggleable="true">
+                        <p:submenu label="Resources" >
+                            <p:menuitem value="Demo" url="http://www.primefaces.org/showcase-labs/ui/home.jsf" />
+                            <p:menuitem value="Documentation" url="http://www.primefaces.org/documentation.html" />
+                            <p:menuitem value="Forum" url="http://forum.primefaces.org/" />
+                            <p:menuitem value="Themes" url="http://www.primefaces.org/themes.html" />
+
+                        </p:submenu>
+                        <p:submenu label="Resources" >
+                            <p:menuitem value="Demo" url="http://www.primefaces.org/showcase-labs/ui/home.jsf" />
+                            <p:menuitem value="Documentation" url="http://www.primefaces.org/documentation.html" />
+                            <p:menuitem value="Forum" url="http://forum.primefaces.org/" />
+                            <p:menuitem value="Themes" url="http://www.primefaces.org/themes.html" />
+
+                        </p:submenu>
+                        <p:submenu label="Resources" >
+                            <p:menuitem value="Demo" url="http://www.primefaces.org/showcase-labs/ui/home.jsf" />
+                            <p:menuitem value="Documentation" url="http://www.primefaces.org/documentation.html" />
+                            <p:menuitem value="Forum" url="http://forum.primefaces.org/" />
+                            <p:menuitem value="Themes" url="http://www.primefaces.org/themes.html" />
+
+                        </p:submenu>
+                        <p:submenu label="Resources" rendered="true">
+                            <p:menuitem value="Demo4" url="http://www.primefaces.org/showcase-labs/ui/home.jsf" />
+                            <p:menuitem value="Documentation4" url="http://www.primefaces.org/documentation.html" />
+                            <p:menuitem value="Forum4" url="http://forum.primefaces.org/" />
+                            <p:menuitem value="Themes4" url="http://www.primefaces.org/themes.html" />
+
+                        </p:submenu>
+
+                    </p:menu>
+                </p:layoutUnit>
+            </p:layout>
+
+        </h:body>
+
+    </f:view>
 </html>
 

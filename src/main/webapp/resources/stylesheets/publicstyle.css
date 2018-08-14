@@ -31,8 +31,16 @@ body {
     outline: none;
 }
 
+.navbar-style {
+    text-align: center;
+}
+
+.navbar-form {
+    text-align: left;
+}
+
 .navbar-style .ui-widget-content {
-    background: #c4c4c4 -moz-linear-gradient(top,rgba(255,255,255,0.8),rgba(255,255,255,0));
+    background: #c4c4c4;
 }
 
 .navbar-style {
@@ -44,9 +52,9 @@ body {
     min-width: 600px;
 }
 
-.navbar-style .ui-widget {
+/*.navbar-style .ui-widget {
     border:none;
-}
+}*/
 
 .ui-layout-resizer {
     border: none;

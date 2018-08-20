@@ -31,20 +31,21 @@ body {
     outline: none;
 }
 
-.navbar-style {
+.navbar-title {
     text-align: center;
+    border: none;
 }
 
 .navbar-form {
     text-align: left;
 }
 
-.navbar-style .ui-widget-content {
+.navbar-title .ui-widget-content {
     background: #c4c4c4;
 }
 
 .navbar-style {
-    border: none;
+    text-align: left;
 }
 
 .mainpage-style {
@@ -69,4 +70,12 @@ body {
     border: none;
     position: absolute;
     right: 0px;
+}
+
+.ui-menu .ui-menuitem-text {
+    text-indent: 1em;
+}
+
+body {
+
 }

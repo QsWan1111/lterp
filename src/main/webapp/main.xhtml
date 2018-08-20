@@ -7,47 +7,20 @@
       xmlns:p="http://primefaces.org/ui">
     <h:outputStylesheet library="stylesheets" name="bootstrap.css"/>
     <h:outputStylesheet library="stylesheets" name="publicstyle.css"/>
-    <!--<h:outputScript library="javascripts" name="iframe.js"/>-->
+    <!--<h:outputScript library="javascripts" name="main.js"/>-->
 
     <h:head>
         <title>Main page</title>
     </h:head>
     <h:body>
-        <p:layout fullPage="true" style="min-width: 800px;">
+
+        <p:layout fullPage="true">
 
             <p:layoutUnit position="north" size="100" resizable="true">
                 <h:outputText value="North unit content." />
             </p:layoutUnit>
 
-            <p:layoutUnit position="west" size="220" header="业务功能" resizable="true" collapsible="true" class="navbar-style">
-
-                <!--                <h:form class="navbar-form">
-                                    <p:growl>
-                                        <p:autoUpdate />
-                                    </p:growl>
-                
-                                    <p:panelMenu>
-                                        <p:submenu label="Ajax Menuitems">
-                                            <p:menuitem value="Save" actionListener="#{menuView.save}" icon="ui-icon-disk" />
-                                            <p:menuitem value="Update" actionListener="#{menuView.update}"  icon="ui-icon-arrowrefresh-1-w" />
-                                        </p:submenu>
-                                        <p:submenu label="Non-Ajax Menuitem">
-                                            <p:menuitem value="Delete" actionListener="#{menuView.delete}"  ajax="false" icon="ui-icon-close"/>
-                                        </p:submenu>
-                                        <p:separator />
-                                        <p:submenu label="Navigations">
-                                            <p:submenu label="Links" icon="ui-icon-extlink">
-                                                <p:submenu label="PrimeFaces" icon="ui-icon-heart">
-                                                    <p:menuitem value="Home" target="core-window" url="http://www.primefaces.org" icon="ui-icon-home"/>
-                                                    <p:menuitem value="Docs" url="http://www.primefaces.org/documentation" icon="ui-icon-document" />
-                                                    <p:menuitem value="Download" url="http://www.primefaces.org/downloads" icon="ui-icon-arrowthick-1-s" />
-                                                    <p:menuitem value="Support" url="http://www.primefaces.org/support" icon="ui-icon-wrench" />
-                                                </p:submenu>
-                                            </p:submenu>
-                                            <p:menuitem value="Mobile" icon="ui-icon-signal" />
-                                        </p:submenu>
-                                    </p:panelMenu>
-                                </h:form>-->
+            <p:layoutUnit position="west" size="220" header="业务功能" resizable="true" collapsible="true" class="navbar-title">
 
                 <h:form>
 
@@ -57,9 +30,25 @@
 
                     <p:menu toggleable="true">
 
-                        <p:submenu label="组织机构及人员管理" expanded="true" >
-                            <p:menuitem value="员工信息管理" url="/register.xhtml" target="core-window" />
-                            <p:menuitem value="组织架构" url="faces/login.xhtml" target="core-window" />
+                        <p:submenu label="基础数据" >
+                            <p:menuitem value="员工信息管理" url="/database/userinfomanage.xhtml" target="core-window" icon="fa fa-user"/>
+                            <p:menuitem value="组织架构" url="faces/login.xhtml" target="core-window" icon="fa "/>
+                            <p:menuitem value="组织架构" url="/faces/category/organigram.xhtml" icon="fa fa-sitemap"/>
+                            <p:menuitem value="用户维护" url="/faces/user/userregister.xhtml" icon="fa fa-user"/>
+                            <p:menuitem value="角色类别" url="/faces/user/userregister.xhtml" icon="fa fa-user"/>
+                            <p:menuitem value="角色维护" url="/faces/user/rolemaintain.xhtml" />
+                            <p:menuitem value="模块类别" url="http://forum.primefaces.org/" />
+                            <p:menuitem value="模块维护" url="http://forum.primefaces.org/" />
+                            <p:menuitem value="客户类别" url="http://forum.primefaces.org/" />
+                            <p:menuitem value="客户维护" url="http://forum.primefaces.org/" />
+                            <p:menuitem value="供应商类别" url="http://forum.primefaces.org/" />
+                            <p:menuitem value="供应商维护" url="http://www.primefaces.org/themes.html" />
+                            <p:menuitem value="物料类别" url="http://forum.primefaces.org/" />
+                            <p:menuitem value="物料代码" url="http://www.primefaces.org/themes.html" />
+                            <p:menuitem value="设备类别" url="http://forum.primefaces.org/" />
+                            <p:menuitem value="设备档案" url="http://www.primefaces.org/themes.html" />
+                            <p:menuitem value="车辆类别" url="http://forum.primefaces.org/" />
+                            <p:menuitem value="车辆档案" url="http://www.primefaces.org/themes.html" />
                         </p:submenu>
 
                         <p:submenu label="客户管理" expanded="false">
@@ -102,25 +91,6 @@
                             <p:menuitem value="即时库存" url="/register.xhtml" target="core-window" />
                         </p:submenu>
 
-                        <p:submenu label="基础数据" >
-                            <p:menuitem value="组织架构" url="/faces/category/organigram.xhtml" icon="fa fa-user-plus"/>
-                            <p:menuitem value="用户维护" url="/faces/user/userregister.xhtml" icon="fa fa-user"/>
-                            <p:menuitem value="角色类别" url="/faces/user/userregister.xhtml" />
-                            <p:menuitem value="角色维护" url="/faces/user/rolemaintain.xhtml" />
-                            <p:menuitem value="模块类别" url="http://forum.primefaces.org/" />
-                            <p:menuitem value="模块维护" url="http://forum.primefaces.org/" />
-                            <p:menuitem value="客户类别" url="http://forum.primefaces.org/" />
-                            <p:menuitem value="客户维护" url="http://forum.primefaces.org/" />
-                            <p:menuitem value="供应商类别" url="http://forum.primefaces.org/" />
-                            <p:menuitem value="供应商维护" url="http://www.primefaces.org/themes.html" />
-                            <p:menuitem value="物料类别" url="http://forum.primefaces.org/" />
-                            <p:menuitem value="物料代码" url="http://www.primefaces.org/themes.html" />
-                            <p:menuitem value="设备类别" url="http://forum.primefaces.org/" />
-                            <p:menuitem value="设备档案" url="http://www.primefaces.org/themes.html" />
-                            <p:menuitem value="车辆类别" url="http://forum.primefaces.org/" />
-                            <p:menuitem value="车辆档案" url="http://www.primefaces.org/themes.html" />
-                        </p:submenu>
-
                         <p:submenu label="系统管理">
                             <p:menuitem value="用户角色分配" url="/register.xhtml" target="core-window" />
                             <p:menuitem value="角色权限分配" url="/register.xhtml" target="core-window" />
@@ -134,8 +104,7 @@
 
             <p:layoutUnit position="center" class="mainpage-style">
 
-                <!--<div id="iframe">-->
-                <!--</div>-->
+                <!--<p id="iframe"/>-->
 
                 <!--<ui:insert name="displaypage">-->
                 <!--<ui:include src="/login.xhtml" id="core-window"/>-->
@@ -151,23 +120,6 @@
             </p:layoutUnit>
 
         </p:layout>
-
-        <!--        <script>
-                    $(document).ready(function () {
-                        $.get("login.xhtml", function (data) {
-                            $("#iframe").html(data);
-                        });
-                        $(function () {
-                            $('.list-side li').click(function () {
-                                var $this = $(this),
-                                        _clickTab = $this.find('a').attr('target');
-                                $.get(_clickTab, function (data) {
-                                    $("#iframe").html(data);
-                                });
-                            });
-                        });
-                    });
-                </script>-->
 
     </h:body>
 </html>

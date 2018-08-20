@@ -26,28 +26,11 @@ body {
 
 .navbar-title {
     text-align: center;
-    border: none;
 }
 
 .navbar-style {
     text-align: left;
-}
-
-.mainpage-style {
-    border: none;
-    min-width: 600px;
-}
-
-/*.navbar-style .ui-widget {
-    border:none;
-}*/
-
-.ui-layout-resizer {
-    border: none;
-}
-
-.iframe-style {
-    border: none;
+    background: #fff;
 }
 
 .ui-clock {
@@ -57,10 +40,79 @@ body {
     right: 0px;
 }
 
-.ui-menu .ui-menuitem-text {
-    text-indent: 1em;
+.nav {
+    position: relative
 }
 
-body {
+.nav ul {
+    margin: 0;
+    padding: 0;
+}
 
+.nav li {
+    list-style: none
+}
+
+.nav a {
+    text-decoration: none;
+    display: block;
+    overflow: hidden;
+    padding-left: 20px;
+    line-height: 46px;
+    max-height: 46px;
+    color: #abb1b7;
+    transition: all .3s
+}
+
+.nav a span {
+    font-size: 16px;
+    margin-left: 30px;
+    /* margin: 0 auto; */
+}
+
+.nav > a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 2px;
+    height: 46px;
+    background: #34a0ce;
+    opacity: 0;
+    transition: all .3s
+}
+
+.nav .nav-icon {
+    font-size: 22px;
+    position: absolute;
+    margin-left: -1px;
+}
+
+.nav-more {
+    float: right;
+    margin-right: 20px;
+    font-size: 12px;
+    transition: transform .3s
+}
+
+.nav-show .nav-more {
+    transform: rotate(90deg)
+}
+
+.nav > a:hover {
+    color: #fff;
+    background: rgba(0, 0, 0, .1)
+}
+
+.nav > a:hover:before {
+    opacity: 1
+}
+
+.nav li:hover a {
+    color: #fff;
+    background: rgba(0, 0, 0, .1)
+}
+
+.ui-draggable-handle {
+    touch-action: none;
+    border: none;
 }

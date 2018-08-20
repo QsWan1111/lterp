@@ -8,19 +8,38 @@
 
     <h:outputStylesheet library="stylesheets" name="bootstrap.css"/>
     <h:outputStylesheet library="stylesheets" name="publicstyle.css"/>
-    <h:outputStylesheet library="stylesheets" name="navbar.css"/>
 
     <h:head>
         <title>Facelet Title</title>
     </h:head>
     <h:body>
         <p:layout fullPage="true">
-            <p:layoutUnit position="west" size="150" header="部门查询">
-                
+            <p:layoutUnit position="west" size="200" header="部门列表" class="navbar-title">
+                <p:inputText id="keyword" size="18" value="#{watermarkView.keyword}" required="true" label="Keyword"/>
+                <p:watermark for="keyword" value="输入关键字进行过滤" id="watermark" />
             </p:layoutUnit>
 
-            <p:layoutUnit position="center">
+            <p:layoutUnit position="center" header="人员信息" class="navbar-title">
 
+                <!--use toolbar-->
+                <h:form>
+                <p:growl id="messages" showDetail="true" />
+                <p:toolbar>
+                    <f:facet name="left">
+                        <p:commandButton type="button" title="Save" icon="ui-icon-disk" />
+                        <span class="ui-separator">
+                            <span class="ui-icon ui-icon-grip-dotted-vertical" />
+                        </span>
+                        <p:commandButton type="button" title="Delete" icon="ui-icon-trash" />
+                        <span class="ui-separator">
+                            <span class="ui-icon ui-icon-grip-dotted-vertical" />
+                        </span>
+                        <p:commandButton type="button" title="Print" icon="ui-icon-print" />
+                    </f:facet>
+                    <f:facet name="right">
+                    </f:facet>
+                </p:toolbar>
+                </h:form>
             </p:layoutUnit>
         </p:layout>
     </h:body>

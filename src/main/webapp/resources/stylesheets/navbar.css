@@ -8,10 +8,18 @@ and open the template in the editor.
     Author     : 91074
 */
 
+.navbar-title {
+    text-align: center;
+}
+
 .navbar-form {
     text-align: left;
 }
 
-.navbar-title .ui-widget-content {
-    background: #c4c4c4;
+.navbar-title .navbar-style .ui-widget-content {
+    background: #fff;
+}
+
+.navbar-style .ui-accordion .ui-accordion-content {
+    padding:0;
 }

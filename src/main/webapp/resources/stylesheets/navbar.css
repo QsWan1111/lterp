@@ -4,7 +4,14 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 2018-8-11, 11:48:22
-    Author     : hm
+    Created on : 2018-8-20, 15:11:50
+    Author     : 91074
 */
 
+.navbar-form {
+    text-align: left;
+}
+
+.navbar-title .ui-widget-content {
+    background: #c4c4c4;
+}

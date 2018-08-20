@@ -5,11 +5,24 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:p="http://primefaces.org/ui">
+
+    <h:outputStylesheet library="stylesheets" name="bootstrap.css"/>
+    <h:outputStylesheet library="stylesheets" name="publicstyle.css"/>
+    <h:outputStylesheet library="stylesheets" name="navbar.css"/>
+
     <h:head>
         <title>Facelet Title</title>
     </h:head>
     <h:body>
-        
+        <p:layout fullPage="true">
+            <p:layoutUnit position="west" size="150" header="部门查询">
+                
+            </p:layoutUnit>
+
+            <p:layoutUnit position="center">
+
+            </p:layoutUnit>
+        </p:layout>
     </h:body>
 </html>
 

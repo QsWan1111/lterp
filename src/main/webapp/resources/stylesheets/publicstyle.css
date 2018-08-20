@@ -17,13 +17,6 @@ body {
 .form-horizontal .btn {
     font-size: 14px;
     border-radius: 15px;
-    /*    color: #fff;
-        background:#fff;
-        border-radius: 30px;
-        padding: 10px 25px;
-        border: none;
-        text-transform: capitalize;
-        transition: all 0.5s ease 0s;*/
 }
 
 
@@ -34,14 +27,6 @@ body {
 .navbar-title {
     text-align: center;
     border: none;
-}
-
-.navbar-form {
-    text-align: left;
-}
-
-.navbar-title .ui-widget-content {
-    background: #c4c4c4;
 }
 
 .navbar-style {

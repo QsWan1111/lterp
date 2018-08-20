@@ -5,9 +5,10 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:p="http://primefaces.org/ui">
+    
     <h:outputStylesheet library="stylesheets" name="bootstrap.css"/>
     <h:outputStylesheet library="stylesheets" name="publicstyle.css"/>
-    <!--<h:outputScript library="javascripts" name="main.js"/>-->
+    <h:outputScript library="javascripts" name="main.js"/>
 
     <h:head>
         <title>Main page</title>
@@ -31,9 +32,8 @@
                     <p:menu toggleable="true">
 
                         <p:submenu label="基础数据" >
-                            <p:menuitem value="员工信息管理" url="/database/userinfomanage.xhtml" target="core-window" icon="fa fa-user"/>
-                            <p:menuitem value="组织架构" url="faces/login.xhtml" target="core-window" icon="fa "/>
-                            <p:menuitem value="组织架构" url="/faces/category/organigram.xhtml" icon="fa fa-sitemap"/>
+                            <p:menuitem value="员工信息管理" url="/database/userinfomanage.xhtml" target="core-window" icon="fa fa-fw fa-user"/>
+                            <p:menuitem value="组织架构" url="/database/organization.xhtml" target="core-window" icon="fa fa-fw fa-sitemap"/>
                             <p:menuitem value="用户维护" url="/faces/user/userregister.xhtml" icon="fa fa-user"/>
                             <p:menuitem value="角色类别" url="/faces/user/userregister.xhtml" icon="fa fa-user"/>
                             <p:menuitem value="角色维护" url="/faces/user/rolemaintain.xhtml" />
@@ -103,17 +103,8 @@
             </p:layoutUnit>
 
             <p:layoutUnit position="center" class="mainpage-style">
-
-                <!--<p id="iframe"/>-->
-
-                <!--<ui:insert name="displaypage">-->
-                <!--<ui:include src="/login.xhtml" id="core-window"/>-->
-                <!--</ui:insert>-->
-
-                <iframe id="core-window" name="core-window" src="login.xhtml" height="99%" width="99%" class="iframe-style" frameborder="0"/>
-
+                <iframe id="core-window" name="core-window" src="database/userinfomanage.xhtml" height="99%" width="99%" class="iframe-style" frameborder="0"/>
             </p:layoutUnit>
-
 
             <p:layoutUnit position="south" size="50" resizable="true" closable="true">
                 <div>  @CopyRight2010-2018  青岛海龙软件有限公司   软件开发人员：#{author} 当前用户： <p:outputLabel value="#{currentUser.userName}"/><p:clock/></div>

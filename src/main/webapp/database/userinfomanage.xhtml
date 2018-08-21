@@ -23,23 +23,25 @@
 
                 <!--use toolbar-->
                 <h:form>
-                <p:growl id="messages" showDetail="true" />
-                <p:toolbar>
-                    <f:facet name="left">
-                        <p:commandButton type="button" title="Save" icon="ui-icon-disk" />
-                        <span class="ui-separator">
-                            <span class="ui-icon ui-icon-grip-dotted-vertical" />
-                        </span>
-                        <p:commandButton type="button" title="Delete" icon="ui-icon-trash" />
-                        <span class="ui-separator">
-                            <span class="ui-icon ui-icon-grip-dotted-vertical" />
-                        </span>
-                        <p:commandButton type="button" title="Print" icon="ui-icon-print" />
-                    </f:facet>
-                    <f:facet name="right">
-                    </f:facet>
-                </p:toolbar>
+
+                    <!--<p:growl id="messages" showDetail="true" />-->
+                    <p:toolbar>
+                        <f:facet name="left">
+                            <p:commandButton type="button" title="新增" icon="fa fa-plus-circle" />
+                            <p:commandButton type="button" title="编辑" icon="fa fa-edit" />
+                            <p:commandButton type="button" title="查询" icon="fa fa-search" />
+                            <p:commandButton type="button" title="删除" icon="fa fa-trash" />
+                            <p:commandButton type="button" title="刷新" icon="fa fa-refresh" />
+                        </f:facet>
+                        <f:facet name="right">
+                        </f:facet>
+                    </p:toolbar>
                 </h:form>
+
+                <h:form>
+
+                </h:form>
+
             </p:layoutUnit>
         </p:layout>
     </h:body>

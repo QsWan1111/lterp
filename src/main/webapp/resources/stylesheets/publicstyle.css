@@ -50,7 +50,7 @@ body {
 }
 
 .nav li {
-    list-style: none
+    list-style: none;
 }
 
 .nav a {
@@ -60,14 +60,13 @@ body {
     padding-left: 20px;
     line-height: 46px;
     max-height: 46px;
-    color: #abb1b7;
+    /*color: #abb1b7;*/
     transition: all .3s
 }
 
 .nav a span {
     font-size: 16px;
-    margin-left: 30px;
-    /* margin: 0 auto; */
+     margin: 0 auto; 
 }
 
 .nav > a:before {
@@ -79,23 +78,6 @@ body {
     background: #34a0ce;
     opacity: 0;
     transition: all .3s
-}
-
-.nav .nav-icon {
-    font-size: 22px;
-    position: absolute;
-    margin-left: -1px;
-}
-
-.nav-more {
-    float: right;
-    margin-right: 20px;
-    font-size: 12px;
-    transition: transform .3s
-}
-
-.nav-show .nav-more {
-    transform: rotate(90deg)
 }
 
 .nav > a:hover {
@@ -116,3 +98,8 @@ body {
     touch-action: none;
     border: none;
 }
+
+/*.fa-plus-circle {
+    font-size: 16px;
+    color: #4cae4c;
+}*/

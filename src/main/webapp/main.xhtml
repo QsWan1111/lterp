@@ -17,8 +17,8 @@
 
         <p:layout fullPage="true">
 
-            <p:layoutUnit position="north" size="50" resizable="true">
-                <h:outputText value="North unit content." />
+            <p:layoutUnit position="north" size="50">
+                
             </p:layoutUnit>
 
             <p:layoutUnit position="west" size="220" header="业务功能" resizable="true" collapsible="true" class="navbar-title">
@@ -32,16 +32,23 @@
                                 <ul>
                                     <li>
                                         <a href="database/userinfomanage.xhtml"  target="iframe">
+                                            <i class="fa fa-fw fa-user"/>
                                             <span>员工信息</span>
                                         </a>
                                     </li>
-                                </ul>
-                                <ul>
                                     <li>
                                         <a href="database/userinfomanage.xhtml"  target="iframe">
-                                            <span>员工信息</span>
+                                            <i class="fa fa-fw fa-sitemap"/>
+                                            <span>组织架构</span>
                                         </a>
                                     </li>
+                                    <li>
+                                        <a href="database/userinfomanage.xhtml"  target="iframe">
+                                            <i class="fa fa-fw fa-sitemap"/>
+                                            <span>物料代码</span>
+                                        </a>
+                                    </li>
+
                                 </ul>
                             </div>
                         </p:tab>
@@ -49,15 +56,21 @@
                             <div class="nav">
                                 <ul>
                                     <li>
-                                        <a href="database/userinfomanage.xhtml"  target="core-window">
-                                            <span>员工信息</span>
+                                        <a href="database/userinfomanage.xhtml"  target="iframe">
+                                            <i class="fa fa-fw fa-sitemap"/>
+                                            <span>订单执行追踪</span>
                                         </a>
                                     </li>
-                                </ul>
-                                <ul>
                                     <li>
-                                        <a href="database/userinfomanage.xhtml"  target="core-window">
-                                            <span>员工信息</span>
+                                        <a href="database/userinfomanage.xhtml"  target="iframe">
+                                            <i class="fa fa-fw fa-sitemap"/>
+                                            <span>生产潜能估计</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="database/userinfomanage.xhtml"  target="iframe">
+                                            <i class="fa fa-fw fa-sitemap"/>
+                                            <span>订单维护</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -67,15 +80,27 @@
                             <div class="nav">
                                 <ul>
                                     <li>
-                                        <a href="database/userinfomanage.xhtml"  target="core-window">
-                                            <span>员工信息</span>
+                                        <a href="database/userinfomanage.xhtml"  target="iframe">
+                                            <i class="fa fa-fw fa-sitemap"/>
+                                            <span>仓库储位编码维护</span>
                                         </a>
                                     </li>
-                                </ul>
-                                <ul>
                                     <li>
                                         <a href="database/userinfomanage.xhtml"  target="core-window">
-                                            <span>员工信息</span>
+                                            <i class="fa fa-fw fa-sitemap"/>
+                                            <span>入库单</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="database/userinfomanage.xhtml"  target="iframe">
+                                            <i class="fa fa-fw fa-sitemap"/>
+                                            <span>出库单</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="database/userinfomanage.xhtml"  target="iframe">
+                                            <i class="fa fa-fw fa-sitemap"/>
+                                            <span>物料库存</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -97,7 +122,7 @@
 
             <p:layoutUnit position="center" class="mainpage-style">
 
-                <iframe id="iframe" name="iframe" src="database/userinfomanage.xhtml" height="99%" width="99%" class="iframe-style" frameborder="0"/>
+                <iframe id="iframe" name="iframe" src="database/userinfomanage.xhtml" height="99%" width="100%" class="iframe-style" frameborder="0"/>
             </p:layoutUnit>
 
             <p:layoutUnit position="south" size="50" resizable="true" closable="true">

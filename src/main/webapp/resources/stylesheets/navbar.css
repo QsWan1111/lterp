@@ -23,3 +23,8 @@ and open the template in the editor.
 .navbar-style .ui-accordion .ui-accordion-content {
     padding:0;
 }
+
+.ui-draggable-handle {
+    touch-action: none;
+    border: none;
+}

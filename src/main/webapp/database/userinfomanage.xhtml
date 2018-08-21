@@ -23,11 +23,10 @@
 
                 <!--use toolbar-->
                 <h:form>
-
-                    <!--<p:growl id="messages" showDetail="true" />-->
+                    <!--                    <p:growl id="messages" showDetail="true" />-->
                     <p:toolbar>
                         <f:facet name="left">
-                            <p:commandButton type="button" title="新增" icon="fa fa-plus-circle" />
+                            <p:commandButton type="button" title="新增" icon="fa fa-plus-circle" onclick="PF('insert').show();"/>
                             <p:commandButton type="button" title="编辑" icon="fa fa-edit" />
                             <p:commandButton type="button" title="查询" icon="fa fa-search" />
                             <p:commandButton type="button" title="删除" icon="fa fa-trash" />
@@ -39,11 +38,24 @@
                 </h:form>
 
                 <h:form>
-
                 </h:form>
 
             </p:layoutUnit>
         </p:layout>
+
+        <p:dialog header="新增" widgetVar="insert" modal="true" height="200" resizable="false">
+            <h:panelGrid columns="2" cellpadding="5">
+                <h:outputLabel for="name" value="姓名:" />
+                <p:inputText id="name" label="姓名" />
+
+                <h:outputLabel for="surname" value="性别:" />
+                <p:inputText id="surname" label="性别" />
+
+                <h:outputLabel for="age" value="年龄:" />
+                <p:inputText id="age" label="年龄" />
+            </h:panelGrid>
+        </p:dialog>
+
     </h:body>
 </html>
 

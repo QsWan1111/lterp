@@ -93,13 +93,3 @@ body {
     color: #fff;
     background: rgba(0, 0, 0, .1)
 }
-
-.ui-draggable-handle {
-    touch-action: none;
-    border: none;
-}
-
-/*.fa-plus-circle {
-    font-size: 16px;
-    color: #4cae4c;
-}*/
